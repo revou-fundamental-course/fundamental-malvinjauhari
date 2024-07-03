@@ -1,3 +1,4 @@
+// Hamburger Navbar
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navItem = document.querySelector('.nav-item');
