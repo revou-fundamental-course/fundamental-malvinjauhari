@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santri Coderx - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="../assets/img/logo.png"
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <!-- Header Navbar -->
+    <header class="nav-container">
+        <div class="logo-item"></div>
+        <div class="text-item">
+            <p>Santri Coderx -  Web Dev. Team</p>
+        </div>
+        <nav class="nav-item">
+          <a href="#">Home</a>
+          <a href="#our-profile">Our Profile</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#message-us">Message Us</a>
+        </nav>
+        <div class="hamburger">
+            <box-icon name="menu"></box-icon>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <!-- Home Header -->
+        <section class="header-container">
+            <header>
+                <h1>Hai <span id="welcome-title"></span>, Welcome to our portfolio</h1>
+                <p>Santri Coderx</p>
+                <h2>Web Developer <br>Base In Indonesia</h2>
+                <div class="skill-item">
+                   <h1>Our Other Skill</h1>
+                   <p>Cyber Security <box-icon name="right-arrow-alt"></box-icon></p>
+                   <p>Web Development <box-icon name="right-arrow-alt"></box-icon></p>
+                   <p>Internet Networking <box-icon name="right-arrow-alt"></box-icon></p>
+                </div>
+            </header>
+            <article class="header-content">
+                <div class="personal-image"></div>
+            </article>
+        </section>
+        <hr>
+        <!-- Our Profile -->
+        <section class="our-profile" id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon"></div>
+                    <h2>Alvin Jauhari</h2>
+		   <p>Fronted End Web Developer & Product Manager</p>
+                  <button onclick="window.open('https://www.instagram.com/al_hafidz_295/', '_blank')">Connect Here</button>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon"></div>
+                   <h2>Fariz Hafidz</h2>
+		   <p>Full Stack Web Developer</p>
+		   <button onclick="window.open('https://www.instagram.com/al_hafidz_295/', '_blank')">Connect Here</button>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-icon"></div>
+                    <h2>Dayyisinil Winatra</h2>
+		   <p>UI / UX Designer</p>
+		  <button onclick="window.open('https://www.instagram.com/al_hafidz_295/', '_blank')">Connect Here</button>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Portfolio Section -->
+        <section class="our-profile" id="portfolio">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+
+            <article class="portfolio" id="portfolio">
+                <div class="portfolio-card">
+                     <figure>
+                        <img src="./assets/img/errorimage.png" alt="My IPM">
+                        <figcaption>My IPM</figcaption>
+                        <div class="portfolio-content">
+                            <p>Online Platform From Ikatan Pelajar Muhammadiyah MBS Alamin</p>
+                            <button onclick="window.location.href='https://ipmalamin.netlify.app/'">Visit Site</button>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/errorimage.png" alt="Alisco">
+                        <figcaption>Alisco</figcaption>
+                        <div class="portfolio-content">
+                            <p>a website created to inform about competition events</p>
+                            <button onclick="window.location.href='#'">Visit Site</button>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/errorimage.png" alt="Si Arsip">
+                        <figcaption>Si Arsip</figcaption>
+                        <div class="portfolio-content">
+                            <p>Digital archive application</p>
+                            <button onclick="window.location.href='#'">Visit Site</button>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/errorimage.png" alt="Si Money">
+                        <figcaption>Si Money</figcaption>
+                        <div class="portfolio-content">
+                            <p>Money Management System</p>
+                            <button onclick="window.location.href='#'">Visit Site</button>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Message Us Section -->
+        <section class="message-container" id="message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+        
+            <article>
+                <div class="form-container">
+                    <form id="userForm">
+                        <div class="form-group">
+                            <label for="name">Name : </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date Of Birth : </label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="Laki Laki">
+                                <label for="male">Man</label> 
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Woman</label> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="output-container">
+                    <h3>Submitted Information :</h3>
+                    <div id="output"></div>
+                </div>
+            </article>
+        </section>
+        
+    </main>
+    <hr>
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2024 Alvin Jauhari All right reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
